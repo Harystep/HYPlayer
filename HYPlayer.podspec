@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
     'HYPlayer' => ['HYPlayer/Assets/*.{png,xcassets,mp3,strings}']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'HYPlayer/Classes/**/*.h'
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
