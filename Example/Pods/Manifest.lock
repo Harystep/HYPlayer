@@ -1,0 +1,16 @@
+PODS:
+  - HYPlayer (0.1.0)
+
+DEPENDENCIES:
+  - HYPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  HYPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HYPlayer: d2cca384468f9871b7f1872019059de12546a9ee
+
+PODFILE CHECKSUM: f341aee135062b6b18d858de29b2eca4c0d7cba5
+
+COCOAPODS: 1.12.1

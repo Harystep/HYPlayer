@@ -28,15 +28,36 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/HaryStep/HYPlayer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
+  s.ios.deployment_target = '11.0'
+  s.static_framework = true
   s.source_files = 'HYPlayer/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'HYPlayer' => ['HYPlayer/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'HYPlayer' => ['HYPlayer/Assets/*.{png,xcassets,mp3,strings}']
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
+  s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork', 'CoreMotion', 'WebKit', 'AVKit', 'AVFoundation'
+  s.dependency 'Masonry', '~>1.1.0'
+  s.dependency 'MCUIColorUtils'
+  s.dependency 'pop'
+  s.dependency 'AFNetworking'
+  s.dependency 'SDWebImage'
+  s.dependency 'MJExtension'
+  s.dependency 'CocoaAsyncSocket'
+  s.dependency 'ReactiveObjC', '~>3.1.1'
+  s.dependency 'MCUIColorUtils'
+  s.dependency 'Toast'
+  s.dependency 'UICountingLabel'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'ijkplayer', '~>1.1.3'
+  s.dependency 'WsRTC'
+  s.dependency 'WMPageController', '~> 2.4.0'
+  
 end

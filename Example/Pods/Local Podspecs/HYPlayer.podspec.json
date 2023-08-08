@@ -1,0 +1,22 @@
+{
+  "name": "HYPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of HYPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/HaryStep/HYPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HaryStep": "warm588@163.com"
+  },
+  "source": {
+    "git": "https://github.com/HaryStep/HYPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "HYPlayer/Classes/**/*"
+}
